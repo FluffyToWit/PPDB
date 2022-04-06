@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Registrasi;
 use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
@@ -67,5 +68,12 @@ class HomeController extends Controller
         $siswa = Registrasi::where('nama', 'like', "%" . $keyword . "%")->paginate(5);
         return view('pendaftar', compact('siswa'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
+
+    public function exportPDF() 
+    {
+        $data = DB::table('registrasi')->get();
+        return view('exportpdf', ['data' => $data]);
+        
+      }
 
 }

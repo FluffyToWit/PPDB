@@ -125,7 +125,7 @@
                         <!--Table body-->
                     </table>
                     <!--Table-->
-                    <a href="cetakPDF" class="btn btn-secondary bi bi-file-pdf" target="_blank" style="float: right"></a>
+                    <a href="/print" class="btn btn-secondary bi bi-file-pdf" target="_blank" style="float: right"></a>
                 </div>
             </div>
 

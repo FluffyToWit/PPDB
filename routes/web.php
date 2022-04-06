@@ -26,3 +26,4 @@ Auth::routes();
 Route::resource('pendaftar', 'App\Http\Controllers\HomeController');
     Route::get('/pendaftar', [App\Http\Controllers\HomeController::class, 'index'])->name('pendaftar');
     Route::get('/search', [App\Http\Controllers\HomeController::class, 'search'])->name('search');
+    Route::get('/print', [App\Http\Controllers\HomeController::class, 'exportPDF'])->name('exportPDF');
