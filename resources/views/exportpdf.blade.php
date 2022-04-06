@@ -27,11 +27,13 @@
 </head>
 <body>
  
- <center>
-
-     <h2>DATA SELURUH Peserta Penerimaan Peserta Didik Baru <br> Sekolah SMK Weekrama Bogor</h2>
-
- </center>
+    <section id="registrasi" style="padding-top: 40px;">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">DATA SELURUH PESERTA PENERIMAAN PESERTA DIDIK BARU <br> SEKOLAH SMK WEEKRAMA BOGOR</h3>
+            </div>
+        </div>
+    </section>
 
  <table class="table table-striped ">
     <tr>
